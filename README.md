@@ -1,10 +1,12 @@
 # Overview
 
-This repo holds my resume as well as other accompanying resources like my CV and professional doucments which I will plan to continuously update.
+This repo holds my resume, CV and other professional doucments.
 
-I plan upload this file to the internet at [gitanelyon.github.io/resume](https://GitanElyon.github.io/resume).
+I plan to continously update these as my carreer progresses. 
 
-This would allow anyone to view my resume with real time updates.
+You can view the live version here: [gitanelyon.github.io/resume](https://GitanElyon.github.io/resume).
+
+This would allow anyone to access my resume online with real time updates.
 
 # Why
 
