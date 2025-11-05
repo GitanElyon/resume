@@ -19,9 +19,8 @@
     // Convert pixels to inches (96 DPI is standard for web)
     const heightInInches = contentHeight / 96;
     
-    // Add extra padding for margins and to prevent cutoff (1.5 inches total)
-    // This accounts for the 0.5in margins plus additional buffer space
-    const totalHeightInInches = heightInInches + 1.5;
+    // Set the total height for the print page
+    const totalHeightInInches = heightInInches;
     
     // Find or create the style element for print media
     let printStyle = document.getElementById('dynamic-print-style');
@@ -36,7 +35,7 @@
       @media print {
         @page {
           size: 8.5in ${totalHeightInInches}in;
-          margin: 0.5in;
+          margin: 0.0in;
         }
         
         html, body {
