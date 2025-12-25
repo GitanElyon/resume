@@ -24,6 +24,7 @@ body {
   width: 8.5in;
   background: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform-origin: top center;
 }
 
 /* ===== SIDEBAR ===== */
@@ -241,5 +242,104 @@ body {
   text-decoration: underline;
 }
 
-/* ===== PRINT FUNCTION ===== */
+/* ===== DOWNLOAD BUTTON ===== */
+.download-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4a5568;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  background-color: #2d3748;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.download-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* ===== WEBSITE BUTTON ===== */
+.website-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4a5568;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease, opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.website-btn:hover {
+  transform: translateY(-2px);
+  background-color: #2d3748;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.website-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* Hide buttons on scroll */
+.download-btn.hidden,
+.website-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media print {
+  .download-btn {
+    display: none !important;
+  }
+  
+  .website-btn {
+    display: none !important;
+  }
+  
+  body {
+    background: none;
+    padding: 0;
+  }
+
+  .resume-wrapper {
+    width: auto !important;
+    height: auto !important;
+    display: block;
+  }
+  
+  .container {
+    box-shadow: none;
+    width: 100%;
+    max-width: none;
+    grid-template-columns: 2.5in 6in; /* Force fixed width for print to ensure correct sizing */
+    transform: none !important;
+    margin-bottom: 0 !important;
+  }
+}
 

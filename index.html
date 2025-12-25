@@ -6,175 +6,191 @@
     <title>GitanElyon Resume</title>
     <link rel="stylesheet" href="style.css">
     <script src="print.js"></script>
+    <script src="scale.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="ui.js"></script>
   </head>
 
   <body>
-    <div class="container">
-      <!-- Left Sidebar -->
-      <aside class="sidebar">
-        <div class="sidebar-header">
-          <h1>Gitan Elyon</h1>
-          <h2>Mandell-Balogh</h2>
-          <p class="title">Software Engineer</p>
-        </div>
-
-        <section class="sidebar-section">
-          <h2>Education</h2>
-          <div class="education-item">
-            <p class="edu-institution">University of Maryland</p>
-            <p class="edu-detail">- Undergraduate Computer Engineering</p>
-          </div>
-        </section>
-
-        <section class="sidebar-section">
-          <h2>Technical Skills</h2>
-          
-          <div class="skill-category">
-            <h3>Programming Languages</h3>
-            <ul class="skill-list">
-              <li>Rust</li>
-              <li>Go</li>
-              <li>Python</li>
-              <li>JS/TS</li>
-              <li>Java</li>
-              <li>Lua</li>
-              <li>C/C++</li>
-              <li>C#</li>
-              <li>HTML/CSS</li>
-            </ul>
+    <div class="resume-wrapper">
+      <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <h1>Gitan Elyon</h1>
+            <h2>Mandell-Balogh</h2>
+            <p class="title">Software Engineer</p>
           </div>
 
-          <div class="skill-category">
-            <h3>Frameworks & Libraries</h3>
-            <ul class="skill-list">
-              <li>Node.js</li>
-              <li>Svelte</li>
-              <li>Dioxus</li>
-              <li>Vue</li>
-              <li>Electron</li>
-              <li>Tauri</li>
-              <li>React</li>
-            </ul>
-          </div>
+          <section class="sidebar-section">
+            <h2>Education</h2>
+            <div class="education-item">
+              <p class="edu-institution">University of Maryland</p>
+              <p class="edu-detail">- Undergraduate Information Science</p>
+            </div>
+          </section>
 
-          <div class="skill-category">
-            <h3>Databases & Search</h3>
-            <ul class="skill-list">
-              <li>Supabase</li>
-              <li>Firebase</li>
-              <li>PostgreSQL</li>
-              <li>Solr</li>
-              <li>SurrealDB</li>
-              <li>SEO</li>
-            </ul>
-          </div>
+          <section class="sidebar-section">
+            <h2>Technical Skills</h2>
+            
+            <div class="skill-category">
+              <h3>Programming Languages</h3>
+              <ul class="skill-list">
+                <li>Rust</li>
+                <li>Go</li>
+                <li>Python</li>
+                <li>JS/TS</li>
+                <li>Java</li>
+                <li>Lua</li>
+                <li>C/C++</li>
+                <li>C#</li>
+                <li>HTML/CSS</li>
+              </ul>
+            </div>
 
-          <div class="skill-category">
-            <h3>Tools & Systems</h3>
-            <ul class="skill-list">
-              <li>Linux</li>
-              <li>Nix</li>
-              <li>Git</li>
-              <li>CI/CD</li>
-              <li>Agile Workflow</li>
-            </ul>
-          </div>
-        </section>
+            <div class="skill-category">
+              <h3>Frameworks & Libraries</h3>
+              <ul class="skill-list">
+                <li>Node.js</li>
+                <li>Svelte</li>
+                <li>Dioxus</li>
+                <li>Vue</li>
+                <li>Electron</li>
+                <li>Tauri</li>
+                <li>React</li>
+              </ul>
+            </div>
 
-        <section class="sidebar-section contact-section">
-          <h2>Contact</h2>
-          <div class="contact-item">
-            <p class="contact-label">Website</p>
-            <a href="https://gitanelyon.github.io/">gitanelyon.github.io</a>
-          </div>
-          <div class="contact-item">
-            <p class="contact-label">Email</p>
-            <a href="mailto:gitanelyon@gmail.com">gitanelyon@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <p class="contact-label">Phone</p>
-            <p>443-224-8540</p>
-          </div>
-          <div class="contact-item">
-            <p class="contact-label">Location</p>
-            <p>Baltimore, Maryland</p>
-          </div>
-        </section>
-      </aside>
+            <div class="skill-category">
+              <h3>Databases & Search</h3>
+              <ul class="skill-list">
+                <li>Supabase</li>
+                <li>Firebase</li>
+                <li>PostgreSQL</li>
+                <li>Solr</li>
+                <li>SurrealDB</li>
+                <li>SEO</li>
+              </ul>
+            </div>
 
-      <!-- Main Content -->
-      <main class="main-content">
-        <section class="content-section">
-          <h2>About Me</h2>
-          <p>I'm a passionate software engineer with a strong background in full-stack development. I love working with cutting-edge technologies and building software that makes a difference.</p>
-        </section>
+            <div class="skill-category">
+              <h3>Tools & Systems</h3>
+              <ul class="skill-list">
+                <li>Linux</li>
+                <li>Nix</li>
+                <li>Git</li>
+                <li>CI/CD</li>
+                <li>Agile Workflow</li>
+              </ul>
+            </div>
+          </section>
 
-        <section class="content-section">
-          <h2>Work Experience</h2>
-          
-          <div class="job">
-            <h3>Full Stack Developer</h3>
-            <p class="job-meta">NexSys | May 2025 - Oct 2025</p>
-            <ul>
-              <li>Built responsive web applications using Rust, Tauri and Dioxus</li>
-              <li>Collaborated with cross-functional teams in an Agile environment</li>
-              <li>Implemented CI/CD pipelines and automated testing</li>
-            </ul>
-          </div>
+          <section class="sidebar-section contact-section">
+            <h2>Contact</h2>
+            <div class="contact-item">
+              <p class="contact-label">Website</p>
+              <a href="https://gitanelyon.github.io/">gitanelyon.github.io</a>
+            </div>
+            <div class="contact-item">
+              <p class="contact-label">Email</p>
+              <a href="mailto:gitanelyon@gmail.com">gitanelyon@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <p class="contact-label">Phone</p>
+              <p>443-224-8540</p>
+            </div>
+            <div class="contact-item">
+              <p class="contact-label">Location</p>
+              <p>Baltimore, Maryland</p>
+            </div>
+          </section>
+        </aside>
 
-          <div class="job">
-            <h3>Software Engineer</h3>
-            <p class="job-meta">Freelancing | Jan 2023 - Present</p>
-            <ul>
-              <li>Built lightweight applications using JavaScript and Rust</li>
-              <li>Worked as a solo developer on a wide variety of tasks</li>
-              <li>Discovered solutions for problems in everyday life</li>
-            </ul>
-          </div>
+        <!-- Main Content -->
+        <main class="main-content">
+          <section class="content-section">
+            <h2>About Me</h2>
+            <p>I'm a passionate software engineer with a strong background in full-stack development. I love working with cutting-edge technologies and building software that makes a difference.</p>
+          </section>
 
-          <div class="job">
-            <h3>Backend Infrastructure Engineer</h3>
-            <p class="job-meta">Mind Over Machines | May 2024 - Sept 2024</p>
-            <ul>
-              <li>Optimized digital applications and systems for clients</li>
-              <li>Worked with engineers of all levels in a fast paced environment</li>
-              <li>Implemented systems to accelerate technology development</li>
-            </ul>
-          </div>
+          <section class="content-section">
+            <h2>Work Experience</h2>
+            
+            <div class="job">
+              <h3>Full Stack Developer</h3>
+              <p class="job-meta">NexSys | May 2025 - Oct 2025</p>
+              <ul>
+                <li>Built responsive web applications using Rust, Tauri and Dioxus</li>
+                <li>Collaborated with cross-functional teams in an Agile environment</li>
+                <li>Implemented CI/CD pipelines and automated testing</li>
+              </ul>
+            </div>
 
-          <div class="job">
-            <h3>Backend Developer</h3>
-            <p class="job-meta">Gulp Data | May 2023 - Sept 2023</p>
-            <ul>
-              <li>Developed and maintained website backend using Python</li>
-              <li>Taught by and worked with senior software engineers</li>
-              <li>Improved QA page by using LLM driven search algorithms</li>
-            </ul>
-          </div>
-        </section>
+            <div class="job">
+              <h3>Software Engineer</h3>
+              <p class="job-meta">Freelancing | Jan 2023 - Present</p>
+              <ul>
+                <li>Built lightweight applications using JavaScript and Rust</li>
+                <li>Worked as a solo developer on a wide variety of tasks</li>
+                <li>Discovered solutions for problems in everyday life</li>
+              </ul>
+            </div>
 
-        <section class="content-section">
-          <h2>Projects</h2>
-          <div class="job">
-            <h3>Minos</h3>
-            <p class="job-meta">Competetive Tetris AI | May 2025</p>
-            <ul>
-              <li>ML AI desinged specifically to play Tetr.io written in Rust</li>
-              <li>Designed to help competetive Tetr.io players hone their skills</li>
-              <li><a href="https://github.com/GitanElyon/minos">Github Repository</a></li>
-            </ul>
-          </div>
-          <div class="job">
-            <h3>Rust Liquidator</h3>
-            <p class="job-meta">Crypto Liquidator | October 2025</p>
-            <ul>
-              <li>Rerote Suilend's TypeScript liquidator from the ground up</li>
-              <li>Worked in a small team to write highly optimized code</li>
-              <li><a href="https://github.com/davidluvsgigi/suilend-liquidator">Github Repository</a></li>
-            </ul>
-          </div>
-        </section>
-      </main>
+            <div class="job">
+              <h3>Backend Infrastructure Engineer</h3>
+              <p class="job-meta">Mind Over Machines | May 2024 - Sept 2024</p>
+              <ul>
+                <li>Optimized digital applications and systems for clients</li>
+                <li>Worked with engineers of all levels in a fast paced environment</li>
+                <li>Implemented systems to accelerate technology development</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <h3>Backend Developer</h3>
+              <p class="job-meta">Gulp Data | May 2023 - Sept 2023</p>
+              <ul>
+                <li>Developed and maintained website backend using Python</li>
+                <li>Taught by and worked with senior software engineers</li>
+                <li>Improved QA page by using LLM driven search algorithms</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="content-section">
+            <h2>Projects</h2>
+            <div class="job">
+              <h3>Minos</h3>
+              <p class="job-meta">Competetive Tetris AI | May 2025</p>
+              <ul>
+                <li>ML AI desinged specifically to play Tetr.io written in Rust</li>
+                <li>Designed to help competetive Tetr.io players hone their skills</li>
+                <li><a href="https://github.com/GitanElyon/minos">Github Repository</a></li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3>Rust Crypto Liquidator</h3>
+              <p class="job-meta">Crypto Liquidator | October 2025</p>
+              <ul>
+                <li>Rerote Suilend's TypeScript liquidator from the ground up</li>
+                <li>Worked in a small team to write highly optimized code</li>
+              </ul>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      </div>
     </div>
+    <a href="https://gitanelyon.github.io" class="website-btn" aria-label="Visit Website">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+      </svg>
+    </a>
+    <button class="download-btn" aria-label="Download PDF">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+      </svg>
+    </button>
   </body>
 </html>
