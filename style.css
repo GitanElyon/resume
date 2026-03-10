@@ -187,13 +187,12 @@ body {
   font-size: 1.8em;
   font-weight: 700;
   color: #1a202c;
-  margin-bottom: 20px;
   position: relative;
 }
 
 .content-section > p {
   color: #4a5568;
-  line-height: 1.8;
+  line-height: 1.4;
   margin-bottom: 12px;
   text-align: justify;
 }
@@ -226,7 +225,8 @@ body {
   margin: 6px 0;
   padding-left: 20px;
   position: relative;
-  line-height: 1.6;
+  line-height: 1.4;
+  font-size: 0.9em;
 }
 
 .job li::before {
