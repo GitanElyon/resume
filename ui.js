@@ -12,11 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
       clone.style.transform = 'none';
       clone.style.margin = '0';
       
-      // We need to append the clone to the body to make it renderable by html2canvas, 
-      // but we can hide it or put it in a hidden container.
-      // However, html2pdf usually handles off-screen elements if passed directly.
-      // But styles might depend on parent.
-      // Let's try a wrapper.
       const wrapper = document.createElement('div');
       wrapper.style.position = 'absolute';
       wrapper.style.top = '-9999px';

@@ -36,10 +36,10 @@ Here will be a list of all my projects, both personal and professional. They wil
 ## Major Projects
 Major projects are those that had a significant impact, either in terms of scale, complexity, or influence on my career. These are projects that I am particularly proud of and that showcase my skills and contributions.
 
-- Flare - Linux Multitool (Sept 2025)
+- Qst - Linux Multitool (Sept 2025)
 	- Role/tech: Rust, Linux systems, CLI tooling
 	- Summary: Architected an extendable CLI tool for Linux system management with plugin-based infrastructure to encourage community contributions and safe systems-level performance.
-	- Link: https://github.com/GitanElyon/flare
+	- Link: https://github.com/GitanElyon/qst
 
 - Crypto Liquidator - (Oct 2025)
 	- Role/tech: Rust, TypeScript (refactor), blockchain
@@ -174,6 +174,11 @@ Work history, roles, responsibilities, and achievements.
 
 ## Tech Companies
 
+- Ridgeback - Systems Security Engineer (April 2026 - Present)
+  - Utilized Rust for systems-level performance and safety in tandem with Tauri and cloud architecture to create efficient, scalable solutions.
+  - Implemented Rust-based network security solutions to protect company systems against cyber attacks actively preventing infrastructure threats.
+  - Led cross-functional teams in Agile environments to deliver secure, high-performance applications on time and within scope.
+  
 - NexSys - Full Stack Developer (May 2025 - Oct 2025)
 	- Built high-performance desktop-native interfaces using Rust and Dioxus, focusing on memory safety and application speed.
 	- Led sprint demos and coordinated asynchronous Git/GitHub workflows for a remote-first team.
