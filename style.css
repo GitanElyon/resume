@@ -90,6 +90,32 @@ body {
   padding-left: 5px;
 }
 
+.pub-title {
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 3px;
+}
+
+.pub-detail {
+  font-size: 0.9em;
+  color: #cbd5e0;
+  margin: 1px 0;
+  padding-left: 5px;
+}
+
+.pub-link {
+  font-size: 0.85em;
+  color: #cbd5e0;
+  margin: 2px 0;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.pub-link:hover {
+  color: #f7fafc;
+  text-decoration: underline;
+}
+
 .skill-category {
   margin-bottom: 14px;
 }

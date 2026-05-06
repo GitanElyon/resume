@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
       wrapper.appendChild(clone);
       document.body.appendChild(wrapper);
 
-      // Calculate dynamic height based on content
-      // 96px is the standard conversion for 1 CSS inch
-      const heightPx = clone.scrollHeight;
-      const heightIn = heightPx / 96;
+      // Calculate dynamic height based on content.
+      // Leave a tiny safety margin so rounding does not spill onto a blank page.
+      const heightPx = Math.max(clone.scrollHeight, clone.getBoundingClientRect().height);
+      const heightIn = Math.max(0.01, (heightPx + 2) / 96);
       
       // Use the calculated height for the PDF page size
       const opt = {

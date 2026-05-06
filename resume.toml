@@ -1,0 +1,77 @@
+[personal]
+first_name = "Gitan Elyon"
+last_name = "Mandell-Balogh"
+title = "Software Engineer"
+
+[contact]
+website = "https://gitanelyon.dev"
+email = "gitanelyon@gmail.com"
+linkedin = "https://www.linkedin.com/in/gitanelyon/"
+github = "https://github.com/gitanelyon"
+phone = "443-224-8540"
+location = "Baltimore, MD"
+
+[education]
+school = "University of Maryland"
+degree = "Bachelor of Science"
+major = "Information Science"
+# minor = "Cyber Security" # will apply for this in the future, but not yet declared
+
+[summary]
+summary = "Systems Engineer focused on high-performance backend infrastructure using Rust and Go. Experienced in optimizing modular architectures, implementing LLM-driven search algorithms, and managing Nix-based reproducible developer environments. Proven ability to deliver scalable and modular solutions in both startup and enterprise settings."
+
+[work]
+jobs = [
+    { company = "Ridgeback", title = "Systems Security Engineer", start_date = "2026-04", end_date = "Present", bullets = [
+        "Optimized Rust for systems-level performance and safety in tandem with Tauri and cloud architecture to create efficient, scalable solutions.",
+        "Implemented Rust-based network security solutions to protect company systems against cyber attacks actively preventing infrastructure threats.",
+        "Leveraged Scryer Prolog to implement logic-based security constraints, ensuring verifiable access control and mitigating logic vulnerabilities."
+    ] },
+    { company = "NexSys", title = "Full Stack Developer", start_date = "2025-05", end_date = "2025-08", bullets = [
+        "Engineered high-performance desktop-native interfaces using Rust and Dioxus, prioritizing memory safety and application speed.",
+        "Streamlined development cycles by leading sprint demos and managing asynchronous Git/GitHub workflows for a remote-first team.",
+        "Increased developer productivity by 20% through the creation of custom Lua scripts to automate complex local workflows and build processes."
+    ] },
+    { company = "Freelancing", title = "Software Engineer", start_date = "2023-01", end_date = "Present", bullets = [
+        "Architected and deployed lightweight applications using Go and Rust, focusing on minimal resource footprint and cross-platform compatibility.",
+        "Delivered 10+ custom software solutions for diverse clients as a solo developer, managing the full SDLC from data gathering to deployment.",
+        "Implemented Nix for reproducible builds, ensuring 100% environment consistency across development, testing, and production stages."
+    ] },
+    { company = "Mind Over Machine", title = "Infrastructure Engineer", start_date = "2024-06", end_date = "2024-09", bullets = [
+        "Optimized enterprise-level digital applications, improving system response times by identifying and resolving performance bottlenecks.",
+        "Collaborated in a cross-functional Agile environment with engineers across all levels to deliver infrastructure upgrades for the company.",
+        "Accelerated technology deployment by implementing automated CI/CD pipelines and system monitoring tools."
+    ] },
+    { company = "Gulp Data", title = "Back End Intern", start_date = "2023-05", end_date = "2023-09", bullets = [
+        "Developed and maintained scalable website backends using Python, ensuring 99.9% uptime for data-intensive client applications.",
+        "Integrated advanced LLM-driven search algorithms (using Solr and PostgreSQL) to enhance QA page accuracy and retrieval speed.",
+        "Partnered with Senior Engineers to implement best practices in code quality, security, and architectural design."
+    ] }
+]
+
+[projects] # not all projects, just the most relevant ones
+projects = [
+    { name = "Qst - Quick Script Tool", skills = ["Rust", "Linux", "CLI"], date = "2025-05", github = "https://github.com/gitanelyon/qst", bullets = [
+      "Architected an extendable CLI tool for Linux system management to centralize fragmented workflows achieving optimized work environments.",
+      "Documented and maintained a comprehensive plugin API, enabling seamless integration of new functionalities by third-party developers.",
+      "Published on crates.io, nixpkgs, and the AUR, achieving hundreds of downloads and fostering an active user community.",
+      ] },
+    { name = "Suilend Liquidator", skills = ["Rust", "TypeScript", "Blockchain"], date = "2025-08", github = "private", bullets = [
+      "Rebuilt a high-frequency blockchain liquidator from TypeScript to Rust, significantly improving execution latency and throughput.",
+      "Worked in a small team to design and implement concurrent systems for real-time interaction with smart contracts with real-time updates.",
+      "Optimized memory usage and concurrency patterns for high-frequency trading environments to ensure efficiency under heavy load."
+      ] },
+]
+
+
+[skills]
+languages = ["Rust", "Go", "Python", "JS/TS", "Java", "Lua", "C/C++", "C#", "HTML/CSS"]
+frameworks = ["Tauri", "Dioxus", "React", "Node.js", "Django", "Vue", "Electron", "Svelte"]
+data = ["Supabase", "PostgreSQL", "Solr", "Redis", "MongoDB"]
+tools = ["Git", "Docker", "Nix", "CI/CD", "Linux", "AWS", "Agile", "Scryer Prolog", "Cloudflare"]
+
+[other] # Certifications, publications, awards, etc.
+publications = [
+    { title = "Proximity Alert: Ipelets for Neighborhood Graphs and Clustering", publisher = "University of Maryland", date = "2026-03", link = "https://arxiv.org/abs/2603.27023" }
+]
+certifications = [] # none yet, but will add in the future
