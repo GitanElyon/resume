@@ -27,6 +27,16 @@ You can either view it in your browser or save it to your computer as a PDF.
 
 Because it is an HTML page, I will be able to customize the CSS rules change how the PDF renders the HTML.
 
+# Building
+
+`index.html` is generated from `resume.toml`:
+
+```bash
+./build.sh
+```
+
+Edit `resume.toml`, then run `./build.sh` to regenerate the page. Do not edit `index.html` directly - changes will be overwritten.
+
 # ॐ (OM.md)
 
 An Om, in Hinduism, is the most sacred spirital symbol. It represents the essense of the ultimate reality, Brahman, which is the source and foundation for all of existance.
