@@ -63,7 +63,7 @@ projects = [
     { name = "Qst - Quick Script Tool", skills = ["Rust", "Linux", "CLI"], date = "2025-09", github = "https://github.com/gitanelyon/qst", bullets = [
       "Architected an extensible CLI tool for Linux system management, centralizing fragmented workflows into one plugin-based interface.",
       "Designed and documented a plugin API, enabling third-party developers to extend functionality safely.",
-      "Published on crates.io, nixpkgs, and the AUR, with hundreds of downloads and an active user community."
+      "Published on Github, crates.io, and the AUR, with hundreds of downloads and an active user community."
       ] },
     { name = "Suilend Liquidator", skills = ["Rust", "TypeScript", "Concurrency"], date = "2025-10", github = "private", bullets = [
       "Rebuilt a latency-critical service from TypeScript to Rust, cutting execution latency and raising throughput under sustained load.",
